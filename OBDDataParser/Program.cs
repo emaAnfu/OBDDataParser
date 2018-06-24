@@ -13,17 +13,17 @@ namespace OBDDataParser
             string name;
             CommandType commandType;
 
-            name = "10-05-18_21-04-46_speed_measure";
+            name = "14-06-18_22-16-39_speed_measure";
             commandType = CommandType.speed;
             ProcessRawData(name, commandType);
 
-            name = "10-05-18_21-04-46_rpm_measure";
+            name = "14-06-18_22-16-39_rpm_measure";
             commandType = CommandType.rpm;
             ProcessRawData(name, commandType);
         }
 
         /// <summary>
-        /// It takes the nema of raw data files (in desktop folder) and save all the various
+        /// It takes the name of raw data files (in desktop folder) and save all the various
         /// versions in other txt files. The most useful are the converted one.
         /// </summary>
         private static void ProcessRawData(string name, CommandType commandType)
